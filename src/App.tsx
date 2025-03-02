@@ -126,10 +126,10 @@ function App() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div>
-              <p className="text-sm text-green-300">ZELDD Token Address (Solana)</p>
+              <p className="text-sm text-green-800">ZELDD Token Address (Solana)</p>
               <div className="flex items-center gap-2">
                 <code className="bg-green-900/50 px-3 py-1 rounded text-sm md:text-base">
-                  2pT1Hv5Fon5SaD7iRigRg4XhhKfr1AyWU2oc93THpump
+                  2pT1Hv...93THpump
                 </code>
                 <button 
                   onClick={() => copyToClipboard("2pT1Hv5Fon5SaD7iRigRg4XhhKfr1AyWU2oc93THpump")}
