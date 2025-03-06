@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Sparkles, Rocket, ArrowRight, Twitter, Globe, Copy, Check, ChevronDown, ChevronUp, Cat, Sword } from 'lucide-react';
+import { Sparkles, Rocket, ArrowRight, Twitter, Globe, Copy, Check, ChevronDown, ChevronUp, Cat, Sword, Send, Github, Instagram } from 'lucide-react';
 
 function App() {
   const [copied, setCopied] = useState(false);
@@ -110,13 +110,15 @@ function App() {
                 <img
                   src="/zeldacat.png"
                   alt="ZeldaCat"
-                  className="relative z-10 w-64 h-64 object-cover rounded-full border-4 border-green-400"
+                  onClick={() => alert("I am ZeldaCat. Buy my Memecoin right MEOW!")}
+                  className="relative z-10 w-64 h-64 object-cover rounded-full border-4 border-green-400 cursor-pointer"
+                  style={{ filter: "brightness(1.25)" }}
                 />
                 <img
                   src="/ears.png"
                   alt="Ears"
                   className="absolute z-30 w-[250px] left-1/2 -top-[+2px]"
-                  style={{ transform: "translateX(calc(-50% + 0px)) translateY(-52px)" }}
+                  style={{ transform: "translateX(calc(-50% + 0px)) translateY(-52px)", filter: "brightness(1.25)", pointerEvents: "none" }}
                 />
                 {/* <img
                   src="/ears.png"
@@ -125,8 +127,8 @@ function App() {
                   // className="absolute z-30 w-60 left-1/2 -top-[50px] translate-x-1 translate-y-30"
                   style={{ transform: "translateX(calc(-50% - 2px))" }}
                 /> */}
-                <div className="absolute -top-4 -right-10 bg-green-500 p-2 rounded-full z-20">
-                  <Sword className="h-8 w-8" />
+                <div className="absolute -top-0 -right-10 bg-gray-800 p-2 rounded-full z-20 animate-pulse">
+                  <img src="/solana.png" alt="Solana Logo" className="h-8 w-8" />
                 </div>
               </div>
             </div>
@@ -153,12 +155,13 @@ function App() {
               </div>
             </div>
             <div className="flex gap-6">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="bg-green-700 hover:bg-green-600 p-2 rounded-full transition-colors">
+              <a href="#" onClick={(e) => { e.preventDefault(); alert("HAHAHA No Twitter Sucka!"); }} className="bg-green-700 hover:bg-green-600 p-2 rounded-full transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="bg-green-700 hover:bg-green-600 p-2 rounded-full transition-colors">
+              <a href="#" onClick={(e) => { e.preventDefault(); alert("You got Rugged!"); }} className="bg-green-700 hover:bg-green-600 p-2 rounded-full transition-colors">
                 <Globe size={20} />
               </a>
+          
             </div>
           </div>
         </div>
@@ -421,7 +424,7 @@ function App() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <a 
-              href="#" 
+              href="https://youtu.be/j5a0jTc9S10?si=roa_HUR1eKAc6ccw" 
               className="bg-green-800/30 p-8 rounded-xl hover:bg-green-800/50 transition-colors flex items-center gap-4"
             >
               <div className="bg-[#1DA1F2] p-4 rounded-full">
@@ -432,10 +435,10 @@ function App() {
                 <p>Follow us for the latest updates and announcements</p>
               </div>
             </a>
-            
-            <a 
-              href="#" 
-              className="bg-green-800/30 p-8 rounded-xl hover:bg-green-800/50 transition-colors flex items-center gap-4"
+            {/* <a href="#" onClick={(e) => { e.preventDefault(); alert("Bruh: It's just a meme lol"); }} className="bg-green-700 hover:bg-green-600 p-2 rounded-full transition-colors">
+                <Globe size={20} />
+              </a> */}
+            <a href="#" onClick={(e) => { e.preventDefault(); alert("There is no Discord, jackass"); }} className="bg-green-800/30 p-8 rounded-xl hover:bg-green-800/50 transition-colors flex items-center gap-4"
             >
               <div className="bg-[#5865F2] p-4 rounded-full">
                 <Globe size={32} />
