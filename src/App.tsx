@@ -107,12 +107,25 @@ function App() {
             <div className="md:w-1/2 flex justify-center">
               <div className="relative">
                 <div className="absolute inset-0 bg-green-500 blur-3xl opacity-30 animate-pulse z-0"></div>
-                <img 
-                  src="/zeldacat.png" 
-                  alt="ZeldaCat" 
+                <img
+                  src="/zeldacat.png"
+                  alt="ZeldaCat"
                   className="relative z-10 w-64 h-64 object-cover rounded-full border-4 border-green-400"
                 />
-                <div className="absolute -top-4 -right-4 bg-green-500 p-2 rounded-full z-20">
+                <img
+                  src="/ears.png"
+                  alt="Ears"
+                  className="absolute z-30 w-[250px] left-1/2 -top-[+2px]"
+                  style={{ transform: "translateX(calc(-50% + 0px)) translateY(-52px)" }}
+                />
+                {/* <img
+                  src="/ears.png"
+                  alt="Ears"
+                  className="absolute z-30 w-60 left-1/2 -top-[50px] translate-x-1 translate-y-30"
+                  // className="absolute z-30 w-60 left-1/2 -top-[50px] translate-x-1 translate-y-30"
+                  style={{ transform: "translateX(calc(-50% - 2px))" }}
+                /> */}
+                <div className="absolute -top-4 -right-10 bg-green-500 p-2 rounded-full z-20">
                   <Sword className="h-8 w-8" />
                 </div>
               </div>
